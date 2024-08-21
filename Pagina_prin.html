@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--Librerías para CSS Y JavaScript-->
+    <title>Travel</title>
+    <link rel="shortcut icon" href="imagenes/Avión.png" />
+</head>
+
+<body>
+    <header class="header">
+    <div class="top-bar">
+        <div class="cabecera">
+        <div class="menu container">
+            <img class= logo src="imagenes/Logo.png">
+            <input type="checkbox" id="menu" /> 
+            <label for="menu">
+                <img src="imagenes/menu.png" class="menu-icono" alt="">
+            </label>
+            <!--Menú-->
+            <nav class="navbar">
+                <ul>
+                   <li><a href="index.html">Inicio</a></li> 
+                   <li><a href="mision/mision.html">¿Quiénes Somos?</a></li>
+                   <li><a href="Ayuda/Ayuda.html">Ayuda</a></li>
+                   <li><a href="Reservaciones/Reservaciones.html">Reservaciones</a></li> 
+                </ul>
+            </nav>
+            <div class="icons">
+                <a href="https://www.facebook.com/groups/travelingourworld/" target="_blank"><i href="url" class="fa-brands fa-facebook"></a></i><!--Iconos de redes sociales-->
+                <a href="https://twitter.com/travelingworldz?lang=ar" target="_blank"><i href="url" class="fa-brands fa-x"></i></a>
+                <a href="https://www.instagram.com/travellingthroughtheworld/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i></a><!--target="blank" para que el enlace se abra en otra ventana del navegador-->
+            </div>
+        </div>
+        </div>
+    </div>
+        <div class="header-container">
+            <div class="header-txt">
+                <h1>Elige tu próximo destino</h1>
+                <p> Cumple tus sueños de viajar con Travel, con la mejor experciencia y con los mejores precios.
+                    <br>
+                    <br>¡Escoge entre 500+ aerolíneas para encontrar tu mejor opción!<!--es el término para referirnos a un texto falso que simula caracteres latinos y que utilizamos para ver de un modo rápido cómo quedaría una página con el contenido-->
+                </p>
+                <a href="Pagina_prin.html" class="btn-1">Seccion menu</a>
+            </div>
+        </div>
+        <!--Carrusel de imagenes-->
+        <div class="header-content container"></div>
+        <div class="images">
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <a href="Francia/Francia.html"><img src="imagenes/Francia.jpg" alt=""></a>
+                        <h3>Francia</h3>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="Italia/Italia.html"><img src="imagenes/Italia.avif" alt=""></a>
+                        <h3>Italia</h3>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="México/Mexico.html"><img src="imagenes/Mexic.webp" alt=""></a>
+                        <h3>México</h3>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="Guatemala/Guatemala.html"><img src="imagenes/Guatemala.jpg" alt=""></a>
+                        <h3>Guatemala</h3>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="Egipto/Egipto.html"><img src="imagenes/Egipto.jpg" alt=""></a>
+                        <h3>Egipto</h3>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="España/España.html"><img src="imagenes/España.webp" alt=""></a>
+                        <h3>España</h3>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="Japón/Japon.html"><img src="imagenes/Japón.jpg" alt=""></a>
+                        <h3>Japón</h3>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="India/India.html"><img src="imagenes/India.jpg" alt=""></a>
+                        <h3>India</h3>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="rows">
+            <div class="swiper-button-next"></div><!--Flechas -->
+            <div class="swiper-button-prev"></div>
+        </div>
+    </header>
+    <footer> <!--Pies de Página-->
+        <div class="container">
+            <p>&copy; 2024 Travel. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--Librería-->
+    <script src="Java.js"></script>
+</body>
+
+</html>
