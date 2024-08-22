@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Reservaciones.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--Librerías para CSS Y JavaScript-->
+    <link rel="shortcut icon" href="img/Avión.png" />
+    <title>Travel</title>
+    
+</head>
+
+<body>
+    <header class="header">
+    <div class="top-bar">
+        <div class="cabecera">
+        <div class="menu container">
+            <img class= logo src="img/Logo.png">
+            <input type="checkbox" id="menu" /> 
+            <label for="menu">
+                <img src="imagenes/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../Pagina_prin.html">Inicio</a></li> 
+                    <li><a href="../mision/mision.html">¿Quiénes Somos?</a></li>
+                    <li><a href="../Ayuda/Ayuda.html">Ayuda</a></li>
+                    <li><a href="../Reservaciones/Reservaciones.html">Reservaciones</a></li> 
+                </ul>
+            </nav>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i><!--Muestra el texto marcado con un estilo en cursiva o italica y que aparezcan los iconos de redes sociales-->
+                <i class="fa-brands fa-x"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+        </div>
+    </div>
+    </header>
+    <div class="form-container">
+        <h1>Reservación de Viajes</h1>
+        <form id="reservation-form">
+            <label for="name">Nombre del Cliente:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Número Telefónico (Guatemala):</label>
+            <input type="tel" id="phone" name="phone" pattern="^(?:\+502)?[0-9]{8}$" placeholder="+502XXXXXXXX" required>
+
+            <label for="destination">País de Destino:</label>
+            <input type="text" id="destination" name="destination" required>
+
+            <label for="bank-account">Fecha del viaje:</label>
+            <input type="text" id="bank-account" name="bank-account" required>
+
+            <label for="bank-account">Cuenta Bancaria:</label>
+            <input type="text" id="bank-account" name="bank-account" required>
+
+            <button type="submit">Comprar</button>
+        </form>
+    </div>
+    <!-- Modal -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>¡Gracias por su compra!</h2>
+            <p>Su reservación ha sido realizada con éxito.</p>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Travel. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="java.js"></script>
+</body>
+</html>
